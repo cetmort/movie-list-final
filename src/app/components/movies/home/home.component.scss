@@ -1,0 +1,8 @@
+.cardImg{
+    width: 200px;
+    margin: 10px;
+    transition: box-shadow .3s;
+}
+.cardImg:hover{
+    box-shadow: 0 0 50px rgba(134, 4, 4, 0.7); 
+}

@@ -1,0 +1,17 @@
+<div class="cardDialog">
+    <img [src]="'https://image.tmdb.org/t/p/original'+data.backdrop_path" alt="" class="dialogImg">
+    <p class="title">{{data.title}}</p>
+    <span>{{data.overview}}</span>
+    <div class="buttonDialog">
+        <button mat-icon-button class="example-icon favorite-icon" style="margin: 10px;" (click)="addToList(data)">
+            <mat-icon>add</mat-icon> <br>
+            <p>List</p>
+        </button>
+        <button mat-icon-button class="example-icon favorite-icon" style="margin: 10px;" (click)="votar(data)">
+            <mat-icon>thumb_up_border</mat-icon><br>
+            <p>Votar</p>
+        </button>
+    </div>
+    
+</div>
+

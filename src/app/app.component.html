@@ -1,0 +1,37 @@
+<mat-drawer-container class="example-container" autosize>
+
+    <mat-drawer-content>
+      <p>
+        <mat-toolbar class="menuHorizontal">
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" mat-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span><img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg" alt="" style="height: 25px"></span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>search</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>info</mat-icon>
+          </button>
+        </mat-toolbar>
+      </p>
+
+      <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" class="menuLateral">
+    <img src="./assets/SliderL.jpg" alt="" class="img1">
+    <mat-nav-list>
+      <a class="letter" mat-list-item routerLink="/movies/home" routerLinkActive="selec">Home</a>
+      <a class="letter" mat-list-item routerLink="/movies/action" routerLinkActive="selec">Action</a>
+      <a class="letter" mat-list-item routerLink="/movies/horror" routerLinkActive="selec">Horror</a>
+      <a class="letter" mat-list-item routerLink="/movies/mystery" routerLinkActive="selec">Mystery</a>
+    </mat-nav-list>
+  </mat-drawer>
+  
+</mat-drawer-container>
+
+
+
